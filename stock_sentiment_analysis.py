@@ -3,9 +3,9 @@ from textblob import TextBlob
 import pandas as pd
 
 # Twitter API credentials
-API_KEY = 'YvgwouG8ew0NSnUNJSEGy5zW5'
+API_KEY = os.getenv("API_KEY", "")
 API_SECRET = 'tqHP5PPDIBMh7QQTDUOnlpYROJ1WDdv8imceUm16CuZfwc8AOf'
-ACCESS_TOKEN = '1845492063678455808-jWThJ7q0xVymAG0IsDYB19P4VoDvF4'
+ACCESS_TOKEN = os.getenv("TOKEN", "")
 ACCESS_SECRET = '0LI418fkcwdNdnWw4L0j7ejMRautTyVt13KVeThlag6zI'
 
 # Set up authentication
